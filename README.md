@@ -2,7 +2,9 @@
 
 ## Overview
 
-![Split Diagram](./images/alphaBSP.jpg)
+<p align="center">
+  <img src="./images/alphaBSP.jpg">
+</p>
 
 This work demonstrates absolute back-to-front rendering order of transparent polygons, with Z-buffer turned off, and frustum culling using BSP tree. The first part describes partitioning of a geometrical scene into a BSP tree and the second describes how the tree goes to be traversed focusing on correct rendering order and frustum culling.
 
@@ -86,7 +88,7 @@ void BuildBranches(BSP_Node *node) {
 
 After a BSP Tree is constructed, it can be traversed in various manners. Here, we describe back-to-front traversing. The idea is simple: it involves spatial detection between partitioning planes and the viewing frustum. 
 
-![BSP Frustum](BSPFrustum.jpg)
+![BSP Frustum](./images/BSPFrustum.jpg)
 *Figure 1.7: Traversing BSP tree.*
 
 ### Recursive Traversing Function
