@@ -12,30 +12,30 @@ In drawing primitives made up of transparent polygons, the rendering order is cr
 
 In Figure 1.1, there are four polygons. In splitting this configuration, we choose the most balanced face(s) of the polygons to form a splitting plane and store the face(s) in a BSP node. "1" represents two coplanar triangles, the thinner red line is the splitting plane formed by them. The first node contains two faces. The red plane is a well-balanced plane (five faces on both sides). Next, we find two balanced planes from both sides of the red plane: "2" in the red "+" side and "3" in the red "-" side. Recursively, we have four green splitting planes and four face leafs in black.
 
-![Split Diagram](SplitDiag.jpg)
+![Split Diagram](./images/SplitDiag.jpg)
 *Figure 1.1: One non-coplanar face (black) in each leaf for strict back-to-front rendering.*
 
 If strict ordering is not required, there can be more than one non-coplanar face per leaf, and the green splitting planes will not be treated, as shown in Figure 1.2. This approach can speed up the partitioning process and improve efficiency of the viewing frustum traversing the tree, because of significant decreases in node and leaf numbers.
 
-![Split Diagram ML](SplitDiag_ML.jpg)
+![Split Diagram ML](./images/SplitDiag_ML.jpg)
 *Figure 1.2: More than one non-coplanar face (black) in each leaf for coarser rendering order.*
 
 For the implementation, all faces in the scene are initially stored in a linked-list, with N nodes for N faces in it. For each node, there is a pointer to its parent node and two pointers to its child nodes, as shown in Figure 1.3. Thus, it forms a hierarchy of binary tree.
 
-![Linked List](LinkedList.jpg)
+![Linked List](./images/LinkedList.jpg)
 *Figure 1.3: Initial linked-list before partitioning.*
 
 A recursive partitioning function is designed to build all branches of the BSP tree. Refer to Figure 1.4, a specified node \( s \) (a face splitter, its pointer as the input for the recursive partitioning function) and uses its splitting plane to partition all faces in the same hierarchical level (faces with the same parent) throughout the linked-list. 
 
-![Node Split 1](NodeSplit1.jpg)
+![Node Split 1](./images/NodeSplit1.jpg)
 *Figure 1.4: Nodes (red and blue) with the same parent.*
 
 If they intersect, \( s \) splits it into three faces, including its UV texture coordinates, and updates the linked-list by adding two more nodes and modifying the original node from a larger face on the left to a smaller face on the right, as shown in Figures 1.5 and 1.6.
 
-![Triangle Split](TriangleSplit.jpg)
+![Triangle Split](./images/TriangleSplit.jpg)
 *Figure 1.5: Division of a single triangle into three triangles.*
 
-![Node Split 2](NodeSplit2.jpg)
+![Node Split 2](./images/NodeSplit2.jpg)
 *Figure 1.6: Two inserted nodes (with stars) and the modified node (with diamond).*
 
 After \( s \) node partitions all nodes in the same hierarchical level, a balanced node from a pool of children nodes of \( s \) on both sides will be selected for the next level of partitioning. Recursively, a binary tree is formed, each branch has only one parent and two children, and each leaf has one parent but may consist of more than one face, depending on the strictness of rendering order.
@@ -148,3 +148,11 @@ void DrawNode(BSP_Node *node) {
                     DrawNode(node->Pos_Child);
             } else {
                 // On positive side even var = 0
+                //Draw this side, positive.
+                if (node Pos_Child != NULL)
+                	DrawNode(node->Pos_Child);
+            }
+        }
+    }
+}
+```
