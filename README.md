@@ -16,13 +16,16 @@ In Figure 1.1, there are four polygons. In splitting this configuration, we choo
 
 <p align="center">
   <img src="./images/SplitDiag.jpg"><br>
+</p>
 
 *Figure 1.1: One non-coplanar face (black) in each leaf for strict back-to-front rendering.*
-</p>
 
 If strict ordering is not required, there can be more than one non-coplanar face per leaf, and the green splitting planes will not be treated, as shown in Figure 1.2. This approach can speed up the partitioning process and improve efficiency of the viewing frustum traversing the tree, because of significant decreases in node and leaf numbers.
 
-![Split Diagram ML](./images/SplitDiag_ML.jpg)
+<p align="center">
+  <img src="./images/SplitDiag_ML.jpg"><br>
+</p>
+
 *Figure 1.2: More than one non-coplanar face (black) in each leaf for coarser rendering order.*
 
 For the implementation, all faces in the scene are initially stored in a linked-list, with N nodes for N faces in it. For each node, there is a pointer to its parent node and two pointers to its child nodes, as shown in Figure 1.3. Thus, it forms a hierarchy of binary tree.
