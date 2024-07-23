@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Split Diagram](alphaBSP.jpg)
+![Split Diagram](./images/alphaBSP.jpg)
 
 This work demonstrates absolute back-to-front rendering order of transparent polygons, with Z-buffer turned off, and frustum culling using BSP tree. The first part describes partitioning of a geometrical scene into a BSP tree and the second describes how the tree goes to be traversed focusing on correct rendering order and frustum culling.
 
