@@ -15,9 +15,10 @@ In drawing primitives made up of transparent polygons, the rendering order is cr
 In Figure 1.1, there are four polygons. In splitting this configuration, we choose the most balanced face(s) of the polygons to form a splitting plane and store the face(s) in a BSP node. "1" represents two coplanar triangles, the thinner red line is the splitting plane formed by them. The first node contains two faces. The red plane is a well-balanced plane (five faces on both sides). Next, we find two balanced planes from both sides of the red plane: "2" in the red "+" side and "3" in the red "-" side. Recursively, we have four green splitting planes and four face leafs in black.
 
 <p align="center">
-  <img src="./images/SplitDiag.jpg">  
+  <img src="./images/SplitDiag.jpg"><br>
+
+*Figure 1.1: One non-coplanar face (black) in each leaf for strict back-to-front rendering.*
 </p>
-<br>*Figure 1.1: One non-coplanar face (black) in each leaf for strict back-to-front rendering.*
 
 If strict ordering is not required, there can be more than one non-coplanar face per leaf, and the green splitting planes will not be treated, as shown in Figure 1.2. This approach can speed up the partitioning process and improve efficiency of the viewing frustum traversing the tree, because of significant decreases in node and leaf numbers.
 
