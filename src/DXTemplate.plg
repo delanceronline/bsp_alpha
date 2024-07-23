@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DXTemplate - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/DXTemplate.res" /d "_DEBUG" "D:\Coding\AlphaBSP\DXTemplate.rc"" 
+Creating temporary file "C:\DOCUME~1\16550\LOCALS~1\Temp\RSP143.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/DXTemplate.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Coding\AlphaBSP\BoundBox.cpp"
+"D:\Coding\AlphaBSP\BSP_Node.cpp"
+"D:\Coding\AlphaBSP\BSPNodeSet.cpp"
+"D:\Coding\AlphaBSP\BuildBSPTree.cpp"
+"D:\Coding\AlphaBSP\d3dapp.cpp"
+"D:\Coding\AlphaBSP\d3dfont.cpp"
+"D:\Coding\AlphaBSP\d3dutil.cpp"
+"D:\Coding\AlphaBSP\diutil.cpp"
+"D:\Coding\AlphaBSP\DXTemplate.cpp"
+"D:\Coding\AlphaBSP\dxutil.cpp"
+"D:\Coding\AlphaBSP\Index.cpp"
+"D:\Coding\AlphaBSP\Joint.cpp"
+"D:\Coding\AlphaBSP\KeyFrame.cpp"
+"D:\Coding\AlphaBSP\Material.cpp"
+"D:\Coding\AlphaBSP\Matrix.cpp"
+"D:\Coding\AlphaBSP\Mesh.cpp"
+"D:\Coding\AlphaBSP\MeshVBInfo.cpp"
+"D:\Coding\AlphaBSP\ModelInfo.cpp"
+"D:\Coding\AlphaBSP\MyMaths.cpp"
+"D:\Coding\AlphaBSP\Normal.cpp"
+"D:\Coding\AlphaBSP\SceneModelsInfo.cpp"
+"D:\Coding\AlphaBSP\SceneObject.cpp"
+"D:\Coding\AlphaBSP\SkyModel.cpp"
+"D:\Coding\AlphaBSP\Vector2D.cpp"
+"D:\Coding\AlphaBSP\Vector3D.cpp"
+"D:\Coding\AlphaBSP\Vertice.cpp"
+"D:\Coding\AlphaBSP\ViewFrustum.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\16550\LOCALS~1\Temp\RSP143.tmp" 
+Creating temporary file "C:\DOCUME~1\16550\LOCALS~1\Temp\RSP144.tmp" with contents
+[
+dsound.lib dinput8.lib dxerr8.lib d3dx8dt.lib d3d8.lib d3dxof.lib dxguid.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/DXTemplate.pdb" /debug /machine:I386 /out:"Debug/DXTemplate.exe" /pdbtype:sept 
+.\Debug\BoundBox.obj
+.\Debug\BSP_Node.obj
+.\Debug\BSPNodeSet.obj
+.\Debug\BuildBSPTree.obj
+.\Debug\d3dapp.obj
+.\Debug\d3dfont.obj
+.\Debug\d3dutil.obj
+.\Debug\diutil.obj
+.\Debug\DXTemplate.obj
+.\Debug\dxutil.obj
+.\Debug\Index.obj
+.\Debug\Joint.obj
+.\Debug\KeyFrame.obj
+.\Debug\Material.obj
+.\Debug\Matrix.obj
+.\Debug\Mesh.obj
+.\Debug\MeshVBInfo.obj
+.\Debug\ModelInfo.obj
+.\Debug\MyMaths.obj
+.\Debug\Normal.obj
+.\Debug\SceneModelsInfo.obj
+.\Debug\SceneObject.obj
+.\Debug\SkyModel.obj
+.\Debug\Vector2D.obj
+.\Debug\Vector3D.obj
+.\Debug\Vertice.obj
+.\Debug\ViewFrustum.obj
+.\Debug\DXTemplate.res
+]
+Creating command line "link.exe @C:\DOCUME~1\16550\LOCALS~1\Temp\RSP144.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+BoundBox.cpp
+BSP_Node.cpp
+BSPNodeSet.cpp
+BuildBSPTree.cpp
+d3dapp.cpp
+d3dfont.cpp
+d3dutil.cpp
+diutil.cpp
+DXTemplate.cpp
+dxutil.cpp
+Index.cpp
+Joint.cpp
+KeyFrame.cpp
+Material.cpp
+Matrix.cpp
+Mesh.cpp
+MeshVBInfo.cpp
+ModelInfo.cpp
+MyMaths.cpp
+Normal.cpp
+SceneModelsInfo.cpp
+SceneObject.cpp
+SkyModel.cpp
+Vector2D.cpp
+Vector3D.cpp
+Vertice.cpp
+ViewFrustum.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DXTemplate.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

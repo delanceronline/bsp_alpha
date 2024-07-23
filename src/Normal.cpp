@@ -1,0 +1,27 @@
+// Normal.cpp: implementation of the Normal class.
+//
+//////////////////////////////////////////////////////////////////////
+
+//#include "stdafx.h"
+//#include "DXTemplate.h"
+#include "Normal.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+Normal::Normal()
+{
+
+}
+
+Normal::~Normal()
+{
+
+}
